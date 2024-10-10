@@ -1,178 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOC</title>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Creative Studio landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Students of Canada</title>
 
-    <!-- ==== STYLE.CSS ==== -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-    <!-- ====  REMIXICON CDN ==== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap + Creative Studio main styles -->
+	<link rel="stylesheet" href="assets/css/creative-studio.css">
 
-    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- ==== HEADER ==== -->
-    <header class="container header">
-      <!-- ==== NAVBAR ==== -->
-      <nav class="nav">
-        <div class="logo">
-<!--          <h2>Studentsofcanada</h2>-->
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.png" alt="Students of Canada">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button> -->
+
+           
         </div>
+    </nav>
+    <!-- End Of Page Navigation -->
 
-        <div class="nav_menu" id="nav_menu">
-          <button class="close_btn" id="close_btn">
-            <i class="ri-close-fill"></i>
-          </button>
+    
 
-<!--          <ul class="nav_menu_list">-->
-<!--            <li class="nav_menu_item">-->
-<!--              <a href="#" class="nav_menu_link">account</a>-->
-<!--            </li>-->
-<!--            <li class="nav_menu_item">-->
-<!--              <a href="#" class="nav_menu_link">about</a>-->
-<!--            </li>-->
-<!--            <li class="nav_menu_item">-->
-<!--              <a href="#" class="nav_menu_link">service</a>-->
-<!--            </li>-->
-<!--            <li class="nav_menu_item">-->
-<!--              <a href="#" class="nav_menu_link">contact</a>-->
-<!--            </li>-->
-<!--          </ul>-->
+   <br><br><br><br>
+
+
+    <!-- Video Section -->
+    <!-- <section class="has-bg-img py-lg">
+        <div class="container text-center">
+
+    
+            <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
+              <i class="ti-control-play" ></i>
+            </button>
+            <h6 class="section-title mt-4" style="text-align:center;">On a mission to unlock new opportunities and help Canadian students connect, thrive, and succeed like never before!</h6>
+
         </div>
+    </section> -->
+ 
+    <!-- End of Video Section -->
 
-<!--        <button class="toggle_btn" id="toggle_btn">-->
-<!--          <i class="ri-menu-line"></i>-->
-<!--        </button>-->
-      </nav>
-    </header>
 
-    <section class="wrapper">
-      <div class="container">
-        <div class="grid-cols-2">
-          <div class="grid-item-1">
-            <h1 class="main-heading">
-              Welcome to <span>Studentsofcanada.</span>
-              <br />
-<!--              Develop anything.-->
-            </h1>
-            <p class="info-text">
-<!--              Build a beautiful, modern website with flexible components built-->
-<!--              from scratch.-->
-            </p>
 
-            <div class="btn_wrapper">
-              <button class="btn view_more_btn">
-                Play Store <i class="ri-google-play-fill"></i>
-              </button>
 
-              <button class="btn view_more_btn">
-                App Store <i class="ri-apple-line"></i></button>
-            </div>
+    <!-- About Section -->
+    <section id="about">
+        <h6 class="section-title mt-4" style="text-align: center; margin-left: 5%; margin-right: 5%;">Do you relate to the scenarios mentioned below? Not to worry! We've got you covered. At Students of Canada, we're on a mission to unlock new opportunities and help Canadian students connect, thrive, and succeed like never before</h6>
+        <div style="text-align: center;">
+            <a href="https://apps.apple.com/ca/app/students-of-canada/id6670703185" target="_blank">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Available on the App Store" style="width: 163px; height: auto;" class="btn-lg my-1">
+            </a>
+          
+            <a href="https://play.google.com/store/apps/details?id=com.app.soc" target="_blank">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Download on Play Store" style="width: 195px; height: auto;" class="btn-lg my-1">
+            </a>
+          
+            <!-- <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
+              <i class="ti-control-play"></i>
+            </button> -->
           </div>
-          <div class="grid-item-2">
-            <div class="team_img_wrapper">
-              <img src="./img/logo.svg" alt="team-img" />
+        <br><br><br>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/sw1.jpg" alt="Students of Canada" class="w-100 img-thumbnail mb-3">
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <!-- <h6 class="section-subtitle mb-0">We Create</h6>
+                    <h6 class="section-title mb-3">Awesome Work</h6> -->
+                    <p>Casy is exhausted from handing out resumes with no luck securing a part-time job. Her savings are running out, and she lacks connections or networking skills to get job referrals.
+                    </p>
+
+
+                   
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+    
+    <!-- End of About Section -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/sw2.jpg" alt="Students of Canada" class="w-100 img-thumbnail mb-3">
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    
+                    <p>Unemployment, pending tuition fees is drowning Harsh in more and more debt.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="wrapper">
-      <div class="container" data-aos="fade-up" data-aos-duration="1000">
-<!--        <div class="grid-cols-3">-->
-<!--          <div class="grid-col-item">-->
-<!--            <div class="icon">-->
-<!--              <svg-->
-<!--                xmlns="http://www.w3.org/2000/svg"-->
-<!--                fill="none"-->
-<!--                viewBox="0 0 24 24"-->
-<!--                stroke="currentColor"-->
-<!--              >-->
-<!--                <path-->
-<!--                  stroke-linecap="round"-->
-<!--                  stroke-linejoin="round"-->
-<!--                  stroke-width="2"-->
-<!--                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"-->
-<!--                />-->
-<!--              </svg>-->
-<!--            </div>-->
-<!--            <div class="featured_info">-->
-<!--              <span class="title">Built for developers </span>-->
-<!--              <p>-->
-<!--                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore-->
-<!--                ratione facilis animi voluptas exercitationem molestiae.-->
-<!--              </p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="grid-col-item">-->
-<!--            <div class="icon">-->
-<!--              <svg-->
-<!--                xmlns="http://www.w3.org/2000/svg"-->
-<!--                fill="none"-->
-<!--                viewBox="0 0 24 24"-->
-<!--                stroke="currentColor"-->
-<!--              >-->
-<!--                <path-->
-<!--                  stroke-linecap="round"-->
-<!--                  stroke-linejoin="round"-->
-<!--                  stroke-width="2"-->
-<!--                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"-->
-<!--                />-->
-<!--              </svg>-->
-<!--            </div>-->
-<!--            <div class="featured_info">-->
-<!--              <span class="title">Designed to be modern</span>-->
-<!--              <p>-->
-<!--                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut-->
-<!--                ipsum esse corrupti. Quo, labore debitis!-->
-<!--              </p>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div class="grid-col-item">-->
-<!--            <div class="icon">-->
-<!--              <svg-->
-<!--                xmlns="http://www.w3.org/2000/svg"-->
-<!--                fill="none"-->
-<!--                viewBox="0 0 24 24"-->
-<!--                stroke="currentColor"-->
-<!--              >-->
-<!--                <path-->
-<!--                  stroke-linecap="round"-->
-<!--                  stroke-linejoin="round"-->
-<!--                  stroke-width="2"-->
-<!--                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"-->
-<!--                />-->
-<!--              </svg>-->
-<!--            </div>-->
-<!--            <div class="featured_info">-->
-<!--              <span class="title">Documentation for everything</span>-->
-<!--              <p>-->
-<!--                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non-->
-<!--                nostrum voluptate totam ipsa corrupti vero!-->
-<!--              </p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-      </div>
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/sw3.jpg" alt="Students of Canada" class="w-100 img-thumbnail mb-3">
+                </div>
+                <div class="col-md-7 col-lg-8">               
+                    <p>Cheng has to travel for about 2hrs everyday for a job because he doesn’t have a job referral for any jobs near his accommodation.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-<!--    <footer></footer>-->
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/sw4.jpg" alt="Students of Canada" class="w-100 img-thumbnail mb-3">
+                </div>
+                <div class="col-md-7 col-lg-8">
 
-    <!-- ==== ANIMATE ON SCROLL JS CDN -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- ==== GSAP CDN ==== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <!-- ==== SCRIPT.JS ==== -->
-    <script src="./script.js" defer></script>
-  </body>
+                    <p>Priya is a new international student in Canada and doesn't know how to cook. Eating at restaurants is expensive and unhealthy for everyday meals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/sw5.jpg" alt="Students of Canada" class="w-100 img-thumbnail mb-3">
+                </div>
+                <div class="col-md-7 col-lg-8">
+
+                    <p>Nivi is a new student in Canada and is having a hard time finding other peer students near her vicinity to socialize
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-4">
+                    <img src="assets/imgs/sw6.jpg" alt="Students of Canada" class="w-100 img-thumbnail mb-3">
+                </div>
+                <div class="col-md-7 col-lg-8">
+                
+                    <p>Stuart checked on various social media sites like linkedln, indeed and many more for a student job referral, but no student has mentioned where they work in their student phase because they have fear of judgement as the recruiters are present on all the the platforms.
+                    </p>
+                </div>
+            </div>
+        </div><br><br><br>
+
+        <div style="text-align: center;">
+            <a href="https://apps.apple.com/ca/app/students-of-canada/id6670703185" target="_blank">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Available on the App Store" style="width: 163px; height: auto;" class="btn-lg my-1">
+            </a>
+          
+            <a href="https://play.google.com/store/apps/details?id=com.app.soc" target="_blank">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Download on Play Store" style="width: 195px; height: auto;" class="btn-lg my-1">
+            </a>
+          
+            <!-- <button type="button" class="btn btn-outline-primary play-control" data-toggle="modal" data-target="#exampleModalCenter">
+              <i class="ti-control-play"></i>
+            </button> -->
+          </div>
+      
+
+
+    </section>
+
+
+    <!-- Blog Section -->
+    <!-- <section id="blog">
+        <div class="container">
+            <h6 class="section-subtitle text-center">News Feeds</h6>
+            <h6 class="section-title mb-6 text-center">Our Blog</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card blog-post my-4 my-sm-5 my-md-0">
+                        <img src="assets/imgs/blog-1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="card-body">
+                            <div class="details mb-3">
+                                <a href="javascript:void(0)"><i class="ti-comments"></i> 123</a>
+                                <a href="javascript:void(0)"><i class="ti-eye"></i> 123</a>
+                            </div>
+                            <h5 class="card-title">Possimus aliquam veniam</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-post my-4 my-sm-5 my-md-0">
+                        <img src="assets/imgs/blog-2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="card-body">
+                            <div class="details mb-3">
+                                <a href="javascript:void(0)"><i class="ti-comments"></i> 434</a>
+                                <a href="javascript:void(0)"><i class="ti-eye"></i> 987</a>
+                            </div>
+                            <h5 class="card-title">Repudiandae laudantium</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-post my-4 my-sm-5 my-md-0">
+                        <img src="assets/imgs/blog-3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, Creative studio Landing page">
+                        <div class="card-body">
+                            <div class="details mb-3">
+                                <a href="javascript:void(0)"><i class="ti-comments"></i> 164</a>
+                                <a href="javascript:void(0)"><i class="ti-eye"></i> 425</a>
+                            </div>
+                            <h5 class="card-title">Laboriosam asperiores</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!</p>
+                            <a href="javascript:void(0)" class="d-block mt-3">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End of Blog Section -->
+
+
+
+    <section class="has-bg-img py-0">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                            <p class="mt-3">
+                                Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a class="d-inline text-primary" href="#">CarvingConnect, LLC</a>
+                                <li class="list-body">
+                           
+                                    <div class="social-links">
+                                        <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                                        <a href="javascript:void(0)" class="link"><i class="ti-linkedin"></i></a>
+                                        <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                                       
+                                    </div>
+                                </li>
+                            </p>                   
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Studio js -->
+    <script src="assets/js/creative-studio.js"></script>
+
+</body>
 </html>
