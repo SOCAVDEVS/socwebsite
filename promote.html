@@ -48,6 +48,7 @@
             color: var(--text-dark);
             background-color: var(--bg-white);
             overflow-x: hidden;
+            padding-top: 80px; /* Account for fixed navbar */
         }
 
         /* Animated Background */
@@ -116,6 +117,20 @@
             }
         }
 
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
         .navbar-brand img {
             height: 60px;
             width: auto;
@@ -149,7 +164,7 @@
         .hero-section {
             background: var(--gradient-primary);
             color: white;
-            padding: 140px 0 100px;
+            padding: 160px 0 120px;
             text-align: center;
             position: relative;
         }
@@ -157,12 +172,14 @@
         .hero-content {
             position: relative;
             z-index: 2;
+            padding: 2rem 0;
         }
 
         .hero-title {
             font-size: 4rem;
             font-weight: 800;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
             line-height: 1.1;
             animation: fadeInUp 1s ease-out;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -171,7 +188,8 @@
         .hero-subtitle {
             font-size: 1.4rem;
             font-weight: 400;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
             opacity: 0.95;
             max-width: 800px;
             margin-left: auto;
@@ -182,12 +200,13 @@
         .hero-badge {
             display: inline-block;
             background: rgba(255, 255, 255, 0.2);
-            padding: 0.5rem 1.5rem;
+            padding: 1rem 2rem;
             border-radius: 25px;
             font-size: 0.9rem;
             font-weight: 500;
             backdrop-filter: blur(10px);
             animation: fadeInUp 1s ease-out 0.6s both;
+            margin-top: 1rem;
         }
 
         @keyframes fadeInUp {
@@ -202,13 +221,13 @@
         }
 
         .content-section {
-            padding: 100px 0;
+            padding: 120px 0;
         }
 
         .section-title {
             font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             color: var(--text-dark);
             text-align: center;
         }
@@ -227,7 +246,7 @@
         .about-card {
             background: var(--bg-white);
             border-radius: 24px;
-            padding: 3rem;
+            padding: 4rem;
             box-shadow: var(--shadow-xl);
             border: 1px solid var(--border-color);
             position: relative;
@@ -279,7 +298,7 @@
         .feature-card {
             background: var(--bg-white);
             border-radius: 20px;
-            padding: 2.5rem;
+            padding: 3rem;
             box-shadow: var(--shadow-lg);
             border: 1px solid var(--border-color);
             transition: all 0.4s ease;
@@ -543,7 +562,7 @@
             }
 
             .navbar-brand img {
-                height: 70px;
+                height: 150px;
                 object-fit: fill;
                 max-width: 100%;
             }
@@ -683,7 +702,7 @@
             }
 
             .navbar-brand img {
-                height: 55px;
+                height: 150px;
                 object-fit: fill;
             }
 
@@ -891,16 +910,16 @@
                 <div class="contact-card">
                     <h3 class="contact-title">Let's talk!</h3>
                     <div class="contact-info">
-                        <a href="mailto:deepanparikhcad@gmail.com" class="contact-item">
+                        <a href="mailto:info@studentsofcanada.ca" class="contact-item">
                             <i class="fas fa-envelope contact-icon"></i>
-                            <span>deepanparikhcad@gmail.com</span>
+                            <span>info@studentsofcanada.ca</span>
                         </a>
                         <a href="tel:647-685-9312" class="contact-item">
                             <i class="fas fa-phone contact-icon"></i>
                             <span>647-685-9312</span>
                         </a>
                     </div>
-                    <a href="mailto:deepanparikhcad@gmail.com" class="cta-button">
+                    <a href="mailto:info@studentsofcanada.ca" class="cta-button">
                         <i class="fas fa-paper-plane"></i> Get Started Today
                     </a>
                 </div>
