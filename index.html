@@ -13,6 +13,33 @@
     <!-- Bootstrap + Creative Studio main styles -->
 	<link rel="stylesheet" href="assets/css/creative-studio.css">
 
+    <style>
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .promote-btn {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .promote-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+    </style>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
@@ -22,11 +49,9 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/imgs/logo.png" alt="Students of Canada">
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-            </button> -->
-
-           
+            <div class="navbar-nav ms-auto">
+                <a href="promote.html" class="promote-btn">Promote</a>
+            </div>
         </div>
     </nav>
     <!-- End Of Page Navigation -->
