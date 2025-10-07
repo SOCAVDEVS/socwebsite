@@ -1,12 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOC</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="P/S OC — daily verified job referrals for Students, Professionals, and Newcomers in Canada.">
+    <meta name="author" content="Devcrud">
+    <title>Students of Canada</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Studio main styles -->
+	<link rel="stylesheet" href="assets/css/creative-studio.css">
+
+    <style>
+        /* prevent content from sitting under the header */
+        body { padding-top: 120px; }
+        @media (max-width: 768px) { body { padding-top: 90px; } }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .promote-btn {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .promote-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* New landing styles */
+        .hero {
+            padding: 6rem 0 4rem 0;
+        }
+        .hero .title {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .hero .subtitle {
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+        .store-badges img { height: auto; }
+        .store-badges .badge {
+            display: inline-block;
+            margin: 0.25rem 0.4rem;
+        }
+        .scenarios {
+            padding: 2rem 0 4rem 0;
+        }
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .column-header {
+            background: #0f172a;
+            color: #fff;
+            padding: 0.9rem 1rem;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+        .scenario-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+        .scenario-card b { color: #111827; }
+        .scenario-card .insight {
+            display: block;
+            margin-top: 0.5rem;
+            color: #1f2937;
+            font-style: italic;
+        }
+        .scenario-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+        }
+        @media (max-width: 992px) {
+            .hero { padding-top: 5rem; }
+        }
+        @media (max-width: 768px) {
+            .scenario-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
 </head>
-<body>
-    <h1>Studentsofcanada</h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.png" alt="Students of Canada">
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a href="promote.html" class="promote-btn">Promote</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Page Navigation -->
+
+    
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="title mb-3">🔁 New job referrals shared daily for both — field jobs and part‑time jobs</h2>
+                    <p class="subtitle mb-4">🎓 Students, 💼 Professionals, and 🌍 Newcomers — all in one trusted Canadian community.</p>
+                    <div class="store-badges">
+                        <a class="badge" href="https://apps.apple.com/ca/app/students-of-canada/id6670703185" target="_blank" rel="noopener">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="170">
+                        </a>
+                        <a class="badge" href="https://play.google.com/store/apps/details?id=com.app.soc" target="_blank" rel="noopener">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="210">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenarios -->
+    <section class="scenarios">
+        <div class="container">
+            <div class="scenario-grid">
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80" alt="Student applying for part-time jobs on laptop">
+                    <p><b>Casey</b> is tired of applying for part‑time jobs with no luck.</p>
+                    <span class="insight">💡 P/S OC provides daily verified part‑time job referrals shared by students already working nearby.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Professional networking in office">
+                    <p><b>Alex</b> has experience in his field but can’t land a job without Canadian references.</p>
+                    <span class="insight">💡 P/S OC connects him with working professionals for internal referrals in his domain.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="Student managing tuition and budget">
+                    <p><b>Harsh</b> is drowning in tuition fees and debt, struggling to find a part‑time job.</p>
+                    <span class="insight">💡 P/S OC helps him get referrals from students working in trusted stores and companies near campus.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Alumni networking and mentorship">
+                    <p><b>Priya</b>, a new graduate on a work permit, keeps hearing “Canadian experience required.”</p>
+                    <span class="insight">💡 P/S OC connects her with alumni and professionals who refer her to field‑specific openings.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1200&q=80" alt="Long commute on train">
+                    <p><b>Cheng</b> travels 2 hours daily for shifts because he can’t find work near home.</p>
+                    <span class="insight">💡 P/S OC gives him access to location‑based job referrals so he can work closer to where he lives.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1200&q=80" alt="Searching for field jobs in the city">
+                    <p><b>Arjun</b> takes temporary jobs far from home due to lack of field referrals in his city.</p>
+                    <span class="insight">💡 P/S OC shares verified job referrals filtered by city and field, reducing wasted effort.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Students meeting and socializing together">
+                    <p><b>Nivi</b>, a new student, feels isolated and doesn’t know where to meet peers.</p>
+                    <span class="insight">💡 P/S OC helps her connect with students nearby — to socialize, share housing tips, and find job referrals.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Friendly community conversation at a cafe">
+                    <p><b>Sarah</b>, a professional newcomer, finds public platforms too formal and intimidating.</p>
+                    <span class="insight">💡 P/S OC offers a friendly, judgment‑free community for professional connections and referrals.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80" alt="Job boards on a laptop">
+                    <p><b>Stuart</b> applies on job boards but gets no responses for part‑time roles.</p>
+                    <span class="insight">💡 P/S OC gives him daily real job referrals shared by students who already work there.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Professional interview setting around a table">
+                    <p><b>Meera</b> has 8 years of overseas experience but isn’t called for interviews in Canada.</p>
+                    <span class="insight">💡 P/S OC connects her with professionals who can refer her internally and vouch for her experience.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1200&q=80" alt="Private supportive chat on phone">
+                    <p><b>Aman</b> fears being judged on public platforms for asking job help.</p>
+                    <span class="insight">💡 P/S OC provides a private, safe, and supportive space to ask, share, and find referrals.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="Skilled worker with tools">
+                    <p><b>Ravi</b>, a skilled worker on a work visa, still does odd jobs without field‑specific referrals.</p>
+                    <span class="insight">💡 P/S OC helps him access verified field job referrals shared by professionals in his area.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1200&q=80" alt="Graduate seeking first job">
+                    <p><b>Nikhil</b>, a fresher with no job experience, doesn’t know how to get started.</p>
+                    <span class="insight">💡 P/S OC connects him to alumni who remember that struggle — and refer newcomers like him.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1200&q=80" alt="Mentor helping others">
+                    <p><b>Daniel</b>, now settled in a good job, wants to give back.</p>
+                    <span class="insight">💡 P/S OC lets him share verified openings directly with students and newcomers.</span>
+                </div>
+
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80" alt="Students studying together">
+                    <p><b>Every Student</b> faces tuition, rent, and limited networking opportunities.</p>
+                    <span class="insight">💡 P/S OC builds a trusted circle where students help each other with verified part‑time referrals.</span>
+                </div>
+                <div class="scenario-card">
+                    <img class="scenario-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Business networking and careers">
+                    <p><b>Every Professional / Work Visa Holder</b> struggles with underemployment and lack of connections.</p>
+                    <span class="insight">💡 P/S OC helps them grow their careers through peer referrals and trusted job sharing.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="has-bg-img py-0">
+        <div class="container">
+            <div class="footer">
+                <div class="footer-lists">
+                    <ul class="list">
+                            <p class="mt-3">
+                                Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a class="d-inline" href="#" style="color: white;">CarvingConnect, LLC</a>
+                                <li class="list-body">
+                           
+                                    <div class="social-links">
+                                        <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                                        <a href="javascript:void(0)" class="link"><i class="ti-linkedin"></i></a>
+                                        <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                                       
+                                    </div>
+                                </li>
+                            </p>                   
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Studio js -->
+    <script src="assets/js/creative-studio.js"></script>
+
 </body>
 </html>

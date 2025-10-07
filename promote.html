@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Partner with P/S OC - Your gateway to 920K+ Students and Professionals across Canada. Join Canada's unified network where opportunity meets audience.">
+    <meta name="author" content="P/S OC">
+    <title>Partner With Us - P/S OC</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Studio main styles -->
+    <link rel="stylesheet" href="assets/css/creative-studio.css">
+
+    <style>
+        /* prevent content from sitting under the header */
+        body { padding-top: 180px; }
+        @media (max-width: 768px) { body { padding-top: 180px; } }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .home-btn {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* New promote page styles */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero .title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero .description {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+            color: white;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            margin-bottom: 3rem;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 1.5rem;
+        }
+        .mission-text {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            font-weight: 600;
+            color: #1e40af;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        .feature-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .opportunities-section {
+            background: #f8fafc;
+        }
+        .opportunity-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .opportunity-card:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .opportunity-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+        }
+        .opportunity-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 5rem 0;
+        }
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .contact-content {
+            text-align: left;
+        }
+        .contact-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .contact-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: translateY(-2px);
+        }
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #60a5fa;
+        }
+        .contact-item span {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .cta-side {
+            text-align: center;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1.5rem 3rem;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+            border: none;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+            color: white;
+        }
+        .cta-button i {
+            margin-right: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .hero .title { font-size: 2.5rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .section-title { font-size: 2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .about-card, .feature-card { padding: 2rem; }
+            .contact-grid { 
+                grid-template-columns: 1fr; 
+                gap: 2rem; 
+                text-align: center;
+            }
+            .contact-content { text-align: center; }
+            .contact-title { font-size: 2.5rem; }
+            .contact-actions { align-items: center; }
+            .contact-item { justify-content: center; }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/imgs/logo.png" alt="P/S OC">
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="home-btn">Home</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Page Navigation -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="title">📣 Partner With Us</h1>
+                    <p class="subtitle">Your gateway to 920K+ Students and Professionals across Canada.</p>
+                    <p class="description">The only community where students and professionals meet, refer, and grow together — powered by trust, real connections, and career momentum.</p>
+                    <p class="description">Let's build something Canada hasn't seen before: a unified network where opportunity meets audience.</p>
+                    <a href="#contact" class="cta-button">Claim Early Partner Access</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">About P/S OC (Professionals / Students of Canada)</h2>
+            <div class="about-card">
+                <p class="about-text">P/S OC combines the strength of Professionals of Canada and Students of Canada into one network — built around trust, referrals, and genuine connections.</p>
+                <p class="about-text">We're reshaping how Canadians find jobs, referrals, and opportunities through community-driven discovery.</p>
+                <p class="about-text">With 70% of hires coming from networks, we're building the first real work-graph of Canada — connecting people and brands in meaningful ways.</p>
+                <div class="mission-text">We're on a mission to help companies and communities grow — together.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Partner With P/S OC?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3 class="feature-title">Own the Most Under-Tapped Audience in Canada</h3>
+                    <p class="feature-description">Get direct access to two worlds that rarely meet elsewhere: Students, making their first independent purchase and career choices. Professionals, influencing brand, workplace, and lifestyle decisions daily. You're not just reaching an audience — you're entering their trusted circle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🚀</span>
+                    <h3 class="feature-title">Grow & Retain Customers Authentically</h3>
+                    <p class="feature-description">We don't do passive impressions. We drive real engagement — helping brands acquire new users through trust-based referrals and sustain loyalty through ongoing visibility within our ecosystem.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🌟</span>
+                    <h3 class="feature-title">Early Partner Advantage</h3>
+                    <p class="feature-description">As a founding partner, your brand takes premium placement across our student and professional channels — campuses, workplaces, and digital communities. Get in early, get seen first, and grow with us as we scale nationwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Opportunities -->
+    <section class="section opportunities-section">
+        <div class="container">
+            <h2 class="section-title">Partnership Opportunities</h2>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="opportunity-card">
+                        <h3 class="opportunity-title">🎓 Influencer & Campus Activations</h3>
+                        <p class="opportunity-description">Launch with our curated micro-influencer network across universities and professional communities. Turn authentic word-of-mouth into measurable results.</p>
+                    </div>
+                    
+                    <div class="opportunity-card">
+                        <h3 class="opportunity-title">📱 In-App & Community Branding</h3>
+                        <p class="opportunity-description">Your brand, seamlessly integrated into key in-app experiences, community hubs, and referral points used daily by our audience.</p>
+                    </div>
+                    
+                    <div class="opportunity-card">
+                        <h3 class="opportunity-title">🤝 Custom Collaborations</h3>
+                        <p class="opportunity-description">From local launch events to referral challenges — we design creative, data-driven activations that move the needle for your brand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-grid">
+                    <div class="contact-content">
+                        <h2 class="contact-title">Be Part of Canada's New Work Graph</h2>
+                        <p class="contact-subtitle">Join P/S OC and position your brand where it matters most — at the intersection of student ambition and professional growth.</p>
+                        <p class="contact-subtitle">Let's build Canada's next trusted ecosystem — together.</p>
+                        
+                        <div class="contact-actions">
+                            <a href="mailto:connect@studentsofcanada.ca" class="contact-item">
+                                <i class="ti-email"></i>
+                                <span>connect@studentsofcanada.ca</span>
+                            </a>
+                            <a href="tel:647-685-9312" class="contact-item">
+                                <i class="ti-mobile"></i>
+                                <span>647-685-9312</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-side">
+                        <a href="mailto:connect@studentsofcanada.ca" class="cta-button">
+                            <i class="ti-email"></i> Get Started Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#" style="color: white;">CarvingConnect, LLC</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/students-of-canada/" target="_blank"><i class="ti-linkedin"></i></a>
+                <a href="https://apps.apple.com/ca/app/students-of-canada/id6670703185" target="_blank"><i class="ti-apple"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.app.soc" target="_blank"><i class="ti-android"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Studio js -->
+    <script src="assets/js/creative-studio.js"></script>
+
+</body>
+</html>
