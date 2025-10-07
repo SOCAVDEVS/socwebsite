@@ -3,138 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Partner with Students of Canada - Reach students where it matters with targeted advertising and sponsorship opportunities.">
-    <meta name="author" content="Students of Canada">
-    <title>Partner With Us - Students of Canada</title>
+    <meta name="description" content="Partner with P/S OC - Your gateway to 920K+ Students and Professionals across Canada. Join Canada's unified network where opportunity meets audience.">
+    <meta name="author" content="P/S OC">
+    <title>Partner With Us - P/S OC</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap + Creative Studio main styles -->
+    <link rel="stylesheet" href="assets/css/creative-studio.css">
 
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
-            --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            --gradient-secondary: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --bg-light: #f8fafc;
-            --bg-white: #ffffff;
-            --border-color: #e5e7eb;
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: var(--bg-white);
-            overflow-x: hidden;
-            padding-top: 80px; /* Account for fixed navbar */
-        }
-
-        /* Animated Background */
-        .animated-bg {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .floating-elements {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .floating-element {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 8s ease-in-out infinite;
-        }
-
-        .floating-element:nth-child(1) {
-            width: 100px;
-            height: 100px;
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .floating-element:nth-child(2) {
-            width: 150px;
-            height: 150px;
-            top: 60%;
-            right: 15%;
-            animation-delay: 2s;
-        }
-
-        .floating-element:nth-child(3) {
-            width: 80px;
-            height: 80px;
-            top: 80%;
-            left: 20%;
-            animation-delay: 4s;
-        }
-
-        .floating-element:nth-child(4) {
-            width: 120px;
-            height: 120px;
-            top: 30%;
-            right: 30%;
-            animation-delay: 1s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px) rotate(0deg);
-                opacity: 0.7;
-            }
-            50% {
-                transform: translateY(-30px) rotate(180deg);
-                opacity: 1;
-            }
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 0;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .navbar-brand img {
-            height: 60px;
-            width: auto;
-        }
+        /* prevent content from sitting under the header */
+        body { padding-top: 180px; }
+        @media (max-width: 768px) { body { padding-top: 180px; } }
 
         .navbar-nav {
             display: flex;
@@ -161,631 +43,296 @@
             color: white;
         }
 
-        .hero-section {
-            background: var(--gradient-primary);
+        /* New promote page styles */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
-            padding: 160px 0 120px;
+            padding: 4rem 0;
             text-align: center;
-            position: relative;
         }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 2rem 0;
-        }
-
-        .hero-title {
-            font-size: 4rem;
+        .hero .title {
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
-            line-height: 1.1;
-            animation: fadeInUp 1s ease-out;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
         }
-
-        .hero-subtitle {
-            font-size: 1.4rem;
-            font-weight: 400;
-            margin-bottom: 3rem;
-            margin-top: 1rem;
-            opacity: 0.95;
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            animation: fadeInUp 1s ease-out 0.3s both;
         }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 1rem 2rem;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            backdrop-filter: blur(10px);
-            animation: fadeInUp 1s ease-out 0.6s both;
-            margin-top: 1rem;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .content-section {
-            padding: 120px 0;
-        }
-
-        .section-title {
-            font-size: 3rem;
-            font-weight: 700;
+        .hero .description {
+            font-size: 1.1rem;
+            color: #94a3b8;
             margin-bottom: 3rem;
-            color: var(--text-dark);
-            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+            color: white;
         }
 
-        .section-subtitle {
-            font-size: 1.3rem;
-            color: var(--text-light);
-            margin-bottom: 4rem;
-            line-height: 1.7;
+        .section {
+            padding: 4rem 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
             text-align: center;
+            margin-bottom: 3rem;
+            color: #1f2937;
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 3rem;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .about-card {
-            background: var(--bg-white);
-            border-radius: 24px;
-            padding: 4rem;
-            box-shadow: var(--shadow-xl);
-            border: 1px solid var(--border-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--gradient-primary);
-        }
-
-        .about-text {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: var(--text-dark);
-            margin-bottom: 2rem;
-        }
-
-        .mission-text {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            text-align: center;
-            padding: 1.5rem;
-            background: rgba(37, 99, 235, 0.1);
+            background: white;
             border-radius: 16px;
-            border-left: 4px solid var(--primary-color);
+            padding: 3rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            margin-bottom: 3rem;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 1.5rem;
+        }
+        .mission-text {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            font-weight: 600;
+            color: #1e40af;
+            text-align: center;
         }
 
-        .divider {
-            height: 3px;
-            background: var(--gradient-secondary);
-            margin: 4rem 0;
-            border-radius: 2px;
-        }
-
-        .feature-grid {
+        .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
         .feature-card {
-            background: var(--bg-white);
-            border-radius: 20px;
-            padding: 3rem;
-            box-shadow: var(--shadow-lg);
-            border: 1px solid var(--border-color);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
         }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--gradient-primary);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            z-index: 1;
-        }
-
-        .feature-card:hover::before {
-            opacity: 0.05;
-        }
-
         .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
         }
-
-        .feature-content {
-            position: relative;
-            z-index: 2;
-        }
-
         .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
             display: block;
         }
-
         .feature-title {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: var(--text-dark);
+            color: #1f2937;
         }
-
         .feature-description {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: var(--text-light);
+            color: #6b7280;
+            line-height: 1.6;
         }
 
         .opportunities-section {
-            background: var(--bg-light);
-            padding: 100px 0;
+            background: #f8fafc;
         }
-
         .opportunity-card {
-            background: var(--bg-white);
-            border-radius: 16px;
+            background: white;
+            border-radius: 12px;
             padding: 2rem;
             margin-bottom: 1.5rem;
-            box-shadow: var(--shadow-md);
-            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3b82f6;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
         }
-
-        .opportunity-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .opportunity-card:hover::before {
-            opacity: 1;
-        }
-
         .opportunity-card:hover {
-            transform: translateX(5px);
-            box-shadow: var(--shadow-lg);
+            transform: translateX(4px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-
-        .opportunity-content {
-            position: relative;
-            z-index: 2;
-        }
-
         .opportunity-title {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 700;
             margin-bottom: 0.75rem;
-            color: var(--text-dark);
+            color: #1f2937;
         }
-
         .opportunity-description {
-            color: var(--text-light);
+            color: #6b7280;
             line-height: 1.6;
-            font-size: 1.1rem;
         }
 
         .contact-section {
-            background: var(--gradient-secondary);
-            padding: 100px 0;
-            text-align: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
-            position: relative;
+            padding: 5rem 0;
         }
-
-        .contact-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .contact-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .contact-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 3rem;
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-width: 600px;
+        .contact-container {
+            max-width: 1000px;
             margin: 0 auto;
         }
-
-        .contact-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: white;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
         }
-
-        .contact-info {
+        .contact-content {
+            text-align: left;
+        }
+        .contact-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .contact-actions {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
+            gap: 1rem;
         }
-
         .contact-item {
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 1rem;
-            font-size: 1.2rem;
-            color: white;
-            padding: 1rem;
             background: rgba(255, 255, 255, 0.1);
+            padding: 1.25rem 1.5rem;
             border-radius: 12px;
-            backdrop-filter: blur(10px);
             text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
             color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .contact-icon {
-            color: #fbbf24;
-            font-size: 1.8rem;
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: translateY(-2px);
         }
-
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #60a5fa;
+        }
+        .contact-item span {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .cta-side {
+            text-align: center;
+        }
         .cta-button {
-            background: white;
-            color: var(--primary-color);
-            padding: 1.2rem 2.5rem;
-            border-radius: 30px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1.5rem 3rem;
+            border-radius: 16px;
             text-decoration: none;
             font-weight: 700;
-            transition: all 0.3s ease;
-            display: inline-block;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: var(--shadow-lg);
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+            border: none;
         }
-
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: var(--shadow-xl);
-            color: var(--primary-color);
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+            color: white;
+        }
+        .cta-button i {
+            margin-right: 0.75rem;
+            font-size: 1.3rem;
         }
 
         .footer {
-            background: var(--text-dark);
+            background: #1f2937;
             color: white;
-            padding: 3rem 0 2rem;
+            padding: 2rem 0;
+            text-align: center;
         }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
         .social-links {
             display: flex;
+            justify-content: center;
             gap: 1rem;
+            margin-top: 1rem;
         }
-
         .social-links a {
             color: white;
             font-size: 1.5rem;
             transition: all 0.3s ease;
-            display: inline-block;
         }
-
         .social-links a:hover {
-            color: var(--accent-color);
+            color: #3b82f6;
             transform: translateY(-2px);
         }
 
-        .copyright {
-            color: #9ca3af;
-        }
-
-        .copyright a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        /* Mobile-first responsive design */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 0.5rem;
-            }
-
-            .navbar .container {
-                padding: 0 1.5rem;
-            }
-
-            .navbar-brand img {
-                height: 150px;
-                object-fit: fill;
-                max-width: 100%;
-            }
-
-            .hero-title {
-                font-size: 2.5rem;
-                line-height: 1.2;
-            }
-
-            .hero-subtitle {
-                font-size: 1.1rem;
-                padding: 0 1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-                line-height: 1.3;
-            }
-
-            .section-subtitle {
-                font-size: 1.1rem;
-                padding: 0 1rem;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-                padding: 0 0.5rem;
-            }
-
-            .feature-card {
-                padding: 2rem 1.5rem;
-                margin: 0;
-            }
-
-            .feature-title {
-                font-size: 1.5rem;
-            }
-
-            .feature-description {
-                font-size: 1rem;
-            }
-
-            .opportunity-card {
-                padding: 1.5rem;
-                margin: 0 0.5rem 1rem 0.5rem;
-            }
-
-            .opportunity-title {
-                font-size: 1.2rem;
-            }
-
-            .opportunity-description {
-                font-size: 1rem;
-            }
-
-            .contact-card {
-                padding: 2rem 1.5rem;
-                margin: 0 0.5rem;
-                max-width: 100%;
-            }
-
-            .contact-title {
-                font-size: 2rem;
-            }
-
-            .contact-item {
-                font-size: 1rem;
-                padding: 0.75rem;
-                flex-direction: column;
-                text-align: center;
-                gap: 0.5rem;
-                text-decoration: none;
-                color: white;
-            }
-
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
-                width: 100%;
+            .hero .title { font-size: 2.5rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .section-title { font-size: 2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .about-card, .feature-card { padding: 2rem; }
+            .contact-grid { 
+                grid-template-columns: 1fr; 
+                gap: 2rem; 
                 text-align: center;
             }
-
-            .about-card {
-                padding: 2rem 1.5rem;
-                margin: 0 0.5rem;
-            }
-
-            .about-text {
-                font-size: 1.1rem;
-            }
-
-            .mission-text {
-                font-size: 1.1rem;
-                padding: 1rem;
-            }
-
-            .content-section {
-                padding: 60px 0;
-            }
-
-            .opportunities-section {
-                padding: 60px 0;
-            }
-
-            .contact-section {
-                padding: 60px 0;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-
-            .hero-section {
-                padding: 120px 0 80px;
-            }
-
-            .hero-badge {
-                font-size: 0.8rem;
-                padding: 0.4rem 1rem;
-            }
-
-            .floating-elements {
-                display: none;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 0.25rem;
-            }
-
-            .navbar .container {
-                padding: 0 1rem;
-            }
-
-            .navbar-brand img {
-                height: 150px;
-                object-fit: fill;
-            }
-
-            .hero-title {
-                font-size: 2rem;
-                padding: 0 0.5rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1rem;
-                padding: 0 0.5rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-                padding: 0 0.5rem;
-            }
-
-            .section-subtitle {
-                font-size: 1rem;
-                padding: 0 0.5rem;
-            }
-
-            .feature-card {
-                padding: 1.5rem 1rem;
-                margin: 0 0.25rem;
-            }
-
-            .opportunity-card {
-                padding: 1rem;
-                margin: 0 0.25rem 0.75rem 0.25rem;
-            }
-
-            .contact-card {
-                padding: 1.5rem 1rem;
-                margin: 0 0.25rem;
-            }
-
-            .about-card {
-                padding: 1.5rem 1rem;
-                margin: 0 0.25rem;
-            }
-
-            .cta-button {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.9rem;
-            }
-
-            .contact-item {
-                font-size: 0.9rem;
-                padding: 0.5rem;
-                text-decoration: none;
-                color: white;
-            }
-
-            .contact-title {
-                font-size: 1.8rem;
-            }
-
-            .hero-section {
-                padding: 100px 0 60px;
-            }
-
-            .content-section {
-                padding: 40px 0;
-            }
-
-            .opportunities-section {
-                padding: 40px 0;
-            }
-
-            .contact-section {
-                padding: 40px 0;
-            }
+            .contact-content { text-align: center; }
+            .contact-title { font-size: 2.5rem; }
+            .contact-actions { align-items: center; }
+            .contact-item { justify-content: center; }
         }
     </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
     <!-- Page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/imgs/logo.png" alt="Students of Canada">
+                <img src="assets/imgs/logo.png" alt="P/S OC">
             </a>
             <div class="navbar-nav ms-auto">
                 <a href="index.html" class="home-btn">Home</a>
@@ -795,133 +342,113 @@
     <!-- End Of Page Navigation -->
 
     <!-- Hero Section -->
-    <section class="hero-section animated-bg">
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-        </div>
-        
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">📢 Partner With Us</h1>
-                <p class="hero-subtitle">Opportunity to reach upto 920k Students of Canada.</p>
-                <p class="hero-subtitle">We are growing every minute and we want to grow with you!</p>
-                <div class="hero-badge">
-                    <i class="fas fa-star"></i> Early Access Opportunity
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="title">📣 Partner With Us</h1>
+                    <p class="subtitle">Your gateway to 920K+ Students and Professionals across Canada.</p>
+                    <p class="description">The only community where students and professionals meet, refer, and grow together — powered by trust, real connections, and career momentum.</p>
+                    <p class="description">Let's build something Canada hasn't seen before: a unified network where opportunity meets audience.</p>
+                    <a href="#contact" class="cta-button">Claim Early Partner Access</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="content-section">
+    <section class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="about-card">
-                        <h2 class="section-title">🎓 About Students of Canada</h2>
-                        <p class="about-text">
-                            Students of Canada is a mobile-first platform helping students discover part-time jobs through trusted peer referrals. With 70% of jobs in Canada filled via networking, we're building the first real student work graph — showing students where their peers work and how to get in.
-                        </p>
-                        <p class="mission-text">
-                            We're on a mission to level the playing field for student employment.
-                        </p>
-                    </div>
-                </div>
+            <h2 class="section-title">About P/S OC (Professionals / Students of Canada)</h2>
+            <div class="about-card">
+                <p class="about-text">P/S OC combines the strength of Professionals of Canada and Students of Canada into one network — built around trust, referrals, and genuine connections.</p>
+                <p class="about-text">We're reshaping how Canadians find jobs, referrals, and opportunities through community-driven discovery.</p>
+                <p class="about-text">With 70% of hires coming from networks, we're building the first real work-graph of Canada — connecting people and brands in meaningful ways.</p>
+                <div class="mission-text">We're on a mission to help companies and communities grow — together.</div>
             </div>
         </div>
     </section>
 
-    <div class="divider"></div>
-
     <!-- Why Partner Section -->
-    <section class="content-section">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">👀 Why Partner With Us?</h2>
+            <h2 class="section-title">Why Partner With P/S OC?</h2>
             
-            <div class="feature-grid">
+            <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-content">
-                        <span class="feature-icon">🎯</span>
-                        <h3 class="feature-title">Hyper-Targeted Audience</h3>
-                        <p class="feature-description">
-                            We connect you directly with college and university students across Canada who are actively looking for jobs, referrals, and services that support student life.
-                        </p>
-                    </div>
+                    <span class="feature-icon">🎯</span>
+                    <h3 class="feature-title">Own the Most Under-Tapped Audience in Canada</h3>
+                    <p class="feature-description">Get direct access to two worlds that rarely meet elsewhere: Students, making their first independent purchase and career choices. Professionals, influencing brand, workplace, and lifestyle decisions daily. You're not just reaching an audience — you're entering their trusted circle.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-content">
-                        <span class="feature-icon">🚀</span>
-                        <h3 class="feature-title">Early Access = High Visibility</h3>
-                        <p class="feature-description">
-                            Be seen by students as one of our Founding Sponsors. Position your brand front and center while we scale nationally.
-                        </p>
-                    </div>
+                    <span class="feature-icon">🚀</span>
+                    <h3 class="feature-title">Grow & Retain Customers Authentically</h3>
+                    <p class="feature-description">We don't do passive impressions. We drive real engagement — helping brands acquire new users through trust-based referrals and sustain loyalty through ongoing visibility within our ecosystem.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🌟</span>
+                    <h3 class="feature-title">Early Partner Advantage</h3>
+                    <p class="feature-description">As a founding partner, your brand takes premium placement across our student and professional channels — campuses, workplaces, and digital communities. Get in early, get seen first, and grow with us as we scale nationwide.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Partnership Opportunities -->
-    <section class="opportunities-section">
+    <section class="section opportunities-section">
         <div class="container">
-            <h2 class="section-title">🤝 Partnership Opportunities</h2>
+            <h2 class="section-title">Partnership Opportunities</h2>
             
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="opportunity-card">
-                        <div class="opportunity-content">
-                            <h3 class="opportunity-title">🔥 Influencer Campaign Sponsorship</h3>
-                            <p class="opportunity-description">
-                                Support our micro-influencer-driven launch campaign across Toronto campuses.
-                            </p>
-                        </div>
+                        <h3 class="opportunity-title">🎓 Influencer & Campus Activations</h3>
+                        <p class="opportunity-description">Launch with our curated micro-influencer network across universities and professional communities. Turn authentic word-of-mouth into measurable results.</p>
                     </div>
                     
                     <div class="opportunity-card">
-                        <div class="opportunity-content">
-                            <h3 class="opportunity-title">🧠 In-App Branding</h3>
-                            <p class="opportunity-description">
-                                Your logo or product featured in front of users on key screens.
-                            </p>
-                        </div>
+                        <h3 class="opportunity-title">📱 In-App & Community Branding</h3>
+                        <p class="opportunity-description">Your brand, seamlessly integrated into key in-app experiences, community hubs, and referral points used daily by our audience.</p>
                     </div>
                     
                     <div class="opportunity-card">
-                        <div class="opportunity-content">
-                            <h3 class="opportunity-title">🎤 Event or Campus Activation Partner</h3>
-                            <p class="opportunity-description">
-                                Sponsor student networking events or on-campus activations.
-                            </p>
-                        </div>
+                        <h3 class="opportunity-title">🤝 Custom Collaborations</h3>
+                        <p class="opportunity-description">From local launch events to referral challenges — we design creative, data-driven activations that move the needle for your brand.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
+    <!-- Call to Action -->
+    <section class="contact-section" id="contact">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-card">
-                    <h3 class="contact-title">Let's talk!</h3>
-                    <div class="contact-info">
-                        <a href="mailto:connect@studentsofcanada.ca" class="contact-item">
-                            <i class="fas fa-envelope contact-icon"></i>
-                            <span>connect@studentsofcanada.ca</span>
-                        </a>
-                        <a href="tel:647-685-9312" class="contact-item">
-                            <i class="fas fa-phone contact-icon"></i>
-                            <span>647-685-9312</span>
+            <div class="contact-container">
+                <div class="contact-grid">
+                    <div class="contact-content">
+                        <h2 class="contact-title">Be Part of Canada's New Work Graph</h2>
+                        <p class="contact-subtitle">Join P/S OC and position your brand where it matters most — at the intersection of student ambition and professional growth.</p>
+                        <p class="contact-subtitle">Let's build Canada's next trusted ecosystem — together.</p>
+                        
+                        <div class="contact-actions">
+                            <a href="mailto:connect@studentsofcanada.ca" class="contact-item">
+                                <i class="ti-email"></i>
+                                <span>connect@studentsofcanada.ca</span>
+                            </a>
+                            <a href="tel:647-685-9312" class="contact-item">
+                                <i class="ti-mobile"></i>
+                                <span>647-685-9312</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-side">
+                        <a href="mailto:connect@studentsofcanada.ca" class="cta-button">
+                            <i class="ti-email"></i> Get Started Today
                         </a>
                     </div>
-                    <a href="mailto:info@studentsofcanada.ca" class="cta-button">
-                        <i class="fas fa-paper-plane"></i> Get Started Today
-                    </a>
                 </div>
             </div>
         </div>
@@ -930,44 +457,24 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="copyright">
-                    Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">CarvingConnect, LLC</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/company/students-of-canada/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://apps.apple.com/ca/app/students-of-canada/id6670703185" target="_blank"><i class="fab fa-apple"></i></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.app.soc" target="_blank"><i class="fab fa-google-play"></i></a>
-                </div>
+            <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#" style="color: white;">CarvingConnect, LLC</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/students-of-canada/" target="_blank"><i class="ti-linkedin"></i></a>
+                <a href="https://apps.apple.com/ca/app/students-of-canada/id6670703185" target="_blank"><i class="ti-apple"></i></a>
+                <a href="https://play.google.com/store/apps/details?id=com.app.soc" target="_blank"><i class="ti-android"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <script>
-        // Navbar background on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = 'none';
-            }
-        });
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- Creative Studio js -->
+    <script src="assets/js/creative-studio.js"></script>
+
 </body>
-</html> 
+</html>
